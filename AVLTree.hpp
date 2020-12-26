@@ -37,41 +37,41 @@ int GetBalanceFactor(AVLNode* treeNode);
 /// @param treeNode Узел.
 void FixHeight(AVLNode* treeNode);
 
-/// @brief Левый поворот.
+/// @brief Левый поворот вокруг treeNode.
 /// @param treeNode Узел.
-/// @return			Корень.
+/// @return			Новый Корень.
 AVLNode* RotateLeft(AVLNode* treeNode);
 
-/// @brief Правый поворот.
+/// @brief Правый поворот вокруг treeNode.
 /// @param treeNode Узел.
-/// @return			Корень.
+/// @return			Новый Корень.
 AVLNode* RotateRight(AVLNode* treeNode);
 
 /// @brief Балансировка 
 /// @param treeNode Узел.
-/// @return			Корень.
+/// @return			Новый Корень.
 AVLNode* Balance(AVLNode* treeNode);
 
 /// @brief Вставка.
 /// @param treeNode Узел. 
 /// @param key		Значение.
-/// @return			Корень.
+/// @return			Новый Корень.
 AVLNode* Insert(AVLNode* treeNode, int key);
 
 /// @brief Поиск минимума.
 /// @param treeNode Узел.
-/// @return			Корень.
+/// @return			Новый Корень.
 AVLNode* FindMinimal(AVLNode* treeNode);
 
 /// @brief Удаление минимального элемента.
 /// @param treeNode Узел.
-/// @return			Корень.
+/// @return			Новый Корень.
 AVLNode* RemoveMinimal(AVLNode* treeNode);
 
 /// @brief Удаление.
 /// @param treeNode Узел.
 /// @param key		Значение.
-/// @return			Корень.
+/// @return			Новый Корень.
 AVLNode* Remove(AVLNode* treeNode, int key);
 
 /// @brief Поиск.
@@ -80,9 +80,8 @@ AVLNode* Remove(AVLNode* treeNode, int key);
 /// @return			Узел со значением key.
 AVLNode* Find(AVLNode* treeNode, int key);
 
-//TODO посылвть дерево а не узел.
 /// @brief Удаление дерева.
-/// @param treeNode Узел.
+/// @param treeNode Узел корня.
 void FreeTree(AVLNode* treeNode);
 
 #endif //AVLTREE_H

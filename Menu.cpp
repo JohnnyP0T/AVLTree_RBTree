@@ -2,7 +2,7 @@
 #include <string>
 #include <iomanip>
 #include <Windows.h>
-//TODO //#include <vld.h>
+#include <vld.h>
 
 #include "Menu.hpp"
 

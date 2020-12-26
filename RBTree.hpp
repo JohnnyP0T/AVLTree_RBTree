@@ -26,14 +26,14 @@ struct RBTree
 	Node* Root = nullptr;
 };
 
-/// @brief Левый поворот.
+/// @brief Левый поворот вокруг node.
 /// @param root Корень
-/// @param node Повторт вокруг узла.
+/// @param node Узел.
 void RotateLeft(Node*& root, Node*& node);
 
-/// @brief Правый поворот.
+/// @brief Правый поворот вокруг node.
 /// @param root Корень
-/// @param node Повторт вокруг узла.
+/// @param node Узел.
 void RotateRight(Node*& root, Node*& node);
 
 /// @brief Балансировка вставки.

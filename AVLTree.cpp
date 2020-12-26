@@ -32,10 +32,16 @@ void FixHeight(AVLNode* treeNode)
 AVLNode* RotateLeft(AVLNode* treeNode)
 {
 	AVLNode* current = treeNode->Right;
+	
+	//Выполняем вращение.
 	treeNode->Right = current->Left;
 	current->Left = treeNode;
+	
+	//Обновляем веса.
 	FixHeight(treeNode);
 	FixHeight(current);
+	
+	//Возвращаем новый корень.
 	return current;
 }
 
@@ -43,10 +49,16 @@ AVLNode* RotateLeft(AVLNode* treeNode)
 AVLNode* RotateRight(AVLNode* treeNode)
 {
 	AVLNode* current = treeNode->Left;
+	
+	//Выполняем вращение.
 	treeNode->Left = current->Right;
 	current->Right = treeNode;
+
+	//Обновляем веса.
 	FixHeight(treeNode);
 	FixHeight(current);
+
+	//Возвращаем новый корень.
 	return current;
 }
 
@@ -72,7 +84,8 @@ AVLNode* Balance(AVLNode* treeNode)
 		return RotateRight(treeNode);
 	}
 	
-	return treeNode;
+	// Балансировка не нужна.
+	return treeNode; 
 }
 
 
@@ -132,7 +145,7 @@ AVLNode* Remove(AVLNode* treeNode, const int key)
 	{
 		treeNode->Right = Remove(treeNode->Right, key);
 	}
-	else
+	else //  k == p->key 
 	{
 		AVLNode* leftPoint = treeNode->Left;
 		AVLNode* rightPoint = treeNode->Right;
