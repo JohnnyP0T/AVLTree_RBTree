@@ -65,9 +65,9 @@ void PrintTree(AVLNode* node, const int indent)
 
 void SetColor(const int text)
 {
-	int bg = 7;
+	const int background = 7;
 	HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
-	SetConsoleTextAttribute(hStdOut, (WORD)((bg << 4) | text));
+	SetConsoleTextAttribute(hStdOut, (WORD)((background << 4) | text));
 }
 void PrintTree(Node* node, const int indent)
 {
