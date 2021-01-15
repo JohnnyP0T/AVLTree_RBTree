@@ -1,6 +1,8 @@
 #include "iostream"
 
-#include "Menu.hpp"
+#include "MenuAVLTree.hpp"
+#include "MenuRBTree.hpp"
+
 
 
 int main()
@@ -12,7 +14,7 @@ int main()
 		std::cout << "1 - AVLTree\n"
 			<< "2 - RBTree\n"
 			<< "0 - Exit\n";
-		valueForMenu = GetElementConsole();
+		valueForMenu = GetElementConsoleRBTree();
 		switch (valueForMenu)
 		{
 			case 1:

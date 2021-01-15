@@ -1,13 +1,12 @@
 #pragma once
 
-#ifndef MENU_H
-#define MENU_H
+#ifndef MENUAVLTREE_H
+#define MENUAVLTREE_H
 
 #include "AVLTree.hpp"
-#include "RBTree.hpp"
 
 /// @brief Перечисление для меню.
-enum class MenuTreeOption
+enum class MenuAVLTreeOption
 {
 	Add		= 1,
 	Remove	= 2,
@@ -18,23 +17,20 @@ enum class MenuTreeOption
 
 /// @brief  Получение целочисленного элемента с консоли.
 /// @return Полученный элемент.
-int GetElementConsole();
+int GetElementConsoleAVLTree();
 
 /// @brief Печать дерева.
-/// @param node				Корень.
-/// @param indent			Отступ.
+/// @param node	  Корень.
+/// @param indent Отступ.
 void PrintTree(AVLNode* node, int indent);
 
 /// @brief Меню для АВЛ дерева.
 /// @param tree Дерево.
 void Menu(AVLtree* tree);
 
-/// @brief Меню для Красно-черного дерева.
-/// @param tree Дерево.
-void Menu(RBTree* tree);
-
 /// @brief Замена цвета.
 /// @param text Номер цвета.
 void SetColor(int text);
 
-#endif //MENU_H
+
+#endif //MENUAVLTREE_H

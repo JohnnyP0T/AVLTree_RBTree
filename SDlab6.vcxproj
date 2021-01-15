@@ -143,12 +143,14 @@
   <ItemGroup>
     <ClCompile Include="AVLTree.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="MenuAVLTree.cpp" />
+    <ClCompile Include="MenuRBTree.cpp" />
     <ClCompile Include="RBTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AVLTree.hpp" />
-    <ClInclude Include="Menu.hpp" />
+    <ClInclude Include="MenuAVLTree.hpp" />
+    <ClInclude Include="MenuRBTree.hpp" />
     <ClInclude Include="RBTree.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

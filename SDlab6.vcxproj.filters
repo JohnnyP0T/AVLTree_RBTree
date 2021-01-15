@@ -21,10 +21,13 @@
     <ClCompile Include="AVLTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Menu.cpp">
+    <ClCompile Include="RBTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="RBTree.cpp">
+    <ClCompile Include="MenuAVLTree.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MenuRBTree.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -32,10 +35,13 @@
     <ClInclude Include="AVLTree.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Menu.hpp">
+    <ClInclude Include="RBTree.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="RBTree.hpp">
+    <ClInclude Include="MenuAVLTree.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MenuRBTree.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
