@@ -188,6 +188,12 @@ void FixDeleteRBTree(Node*& root, Node*& node)
 
 	if(node == root)
 	{
+		if(node->Left == nullptr && node->Right == nullptr)
+		{
+			delete root;
+			root = nullptr;
+			return;
+		}
 		Node* current = root;
 		root = root->Left ? root->Left : root->Right;
 		SetColor(root, Color::Black);
